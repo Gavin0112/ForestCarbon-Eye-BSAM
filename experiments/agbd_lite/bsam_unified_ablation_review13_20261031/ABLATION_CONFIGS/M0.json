@@ -1,0 +1,8 @@
+{
+  "arm": "M0",
+  "enabled": true,
+  "masks": [],
+  "init": "fresh_seeded_MSEFilm",
+  "train_and_validation_same_mask": true,
+  "notes": "Full four-modality reference."
+}

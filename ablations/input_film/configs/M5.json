@@ -1,0 +1,10 @@
+{
+  "arm": "M5",
+  "enabled": true,
+  "masks": [
+    "film_identity"
+  ],
+  "init": "fresh_seeded_MSEFilm",
+  "train_and_validation_same_mask": true,
+  "notes": "Bypass all four entry FiLM operations using body condition None; no sample metadata reaches prediction."
+}

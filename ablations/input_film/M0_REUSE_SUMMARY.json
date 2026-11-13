@@ -1,0 +1,50 @@
+{
+  "status": "M0_REUSE_GRANTED",
+  "decision_date": "2026-11-02",
+  "m0_seed43_total_epochs": 24,
+  "m0_seed43_fixed_updates": 69744,
+  "per_seed": {
+    "43": {
+      "frozen14": {
+        "best_rmse": 54.18233210594978,
+        "best_epoch": 14
+      },
+      "convergence": {
+        "status": "CONVERGED",
+        "total_epochs": 24,
+        "best_rmse": 54.132172219373984,
+        "best_epoch": 19,
+        "improved_over_14": true
+      }
+    },
+    "44": {
+      "frozen14": {
+        "best_rmse": 54.110133658061066,
+        "best_epoch": 14
+      },
+      "convergence": {
+        "status": "CONVERGED",
+        "total_epochs": 24,
+        "best_rmse": 53.98401179856035,
+        "best_epoch": 19,
+        "improved_over_14": true
+      }
+    },
+    "45": {
+      "frozen14": {
+        "best_rmse": 54.012868618785326,
+        "best_epoch": 14
+      },
+      "convergence": {
+        "status": "CONVERGED",
+        "total_epochs": 19,
+        "best_rmse": 54.012868618785326,
+        "best_epoch": 14,
+        "improved_over_14": false
+      }
+    }
+  },
+  "rationale": "Review-13 frozen protocol locks optimizer_mode=bsam, budget_mode=fixed_updates with fixed_updates=69744 (= M0 seed43/bsam total trained epochs 24 x 2906 including its user-approved convergence extension), batch 128, lr 1e-4, order rule seed*101+epoch, StepLR(30,0.1) per completed epoch, BF16 autocast, FP32 losses/Adam, checkpoint rule minimum full-Validation Overall RMSE. These are byte-identical rules to the Review-12 bsam arms and their convergence extensions: same update function (run_fair.update, sha-verified), same model class/construction, same data pipeline. For M0 the MaskedModel wrapper is computationally transparent (mask_inputs passthrough, no hooks). The screen-stage M0 arm is Review-12 seed43/bsam plus its extension; M0 is not rerun. Ablation arms each train the same number of updates as M0 before selection.",
+  "test_access": false,
+  "source_note": "Public summary of the original Review-13 M0 reuse evidence; absolute server paths removed. Original evidence remains in the experimental archive."
+}

@@ -1,0 +1,10 @@
+{
+  "arm": "M6",
+  "enabled": true,
+  "masks": [
+    "all_meta"
+  ],
+  "init": "fresh_seeded_MSEFilm",
+  "train_and_validation_same_mask": true,
+  "notes": "Zero all eight condition coordinates; FiLM remains sample-independent and trainable."
+}

@@ -1,0 +1,11 @@
+{
+  "arm": "M2",
+  "enabled": true,
+  "masks": [
+    "dem_patch",
+    "terrain_meta"
+  ],
+  "init": "fresh_seeded_MSEFilm",
+  "train_and_validation_same_mask": true,
+  "notes": "Remove spatial DEM and DEM-derived metadata 4:7."
+}

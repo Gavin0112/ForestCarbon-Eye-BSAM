@@ -1,0 +1,11 @@
+{
+  "arm": "M4",
+  "enabled": true,
+  "masks": [
+    "alos_norm",
+    "alos_dn"
+  ],
+  "init": "fresh_seeded_MSEFilm",
+  "train_and_validation_same_mask": true,
+  "notes": "Both normalized HH/HV and original DN zero; radar validity and texture become unavailable."
+}

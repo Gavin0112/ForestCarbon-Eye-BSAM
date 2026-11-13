@@ -1,0 +1,11 @@
+{
+  "arm": "M1",
+  "enabled": true,
+  "masks": [
+    "s2",
+    "s2_date_meta"
+  ],
+  "init": "fresh_seeded_MSEFilm",
+  "train_and_validation_same_mask": true,
+  "notes": "Remove S2 spectral patch and S2 acquisition-date condition 0:1."
+}

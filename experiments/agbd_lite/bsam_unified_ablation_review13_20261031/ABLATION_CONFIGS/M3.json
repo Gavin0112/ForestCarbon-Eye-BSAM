@@ -1,0 +1,10 @@
+{
+  "arm": "M3",
+  "enabled": true,
+  "masks": [
+    "lc"
+  ],
+  "init": "fresh_seeded_MSEFilm",
+  "train_and_validation_same_mask": true,
+  "notes": "All 26 LC channels zero: unknown class, no validity or confidence."
+}

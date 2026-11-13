@@ -1,0 +1,8 @@
+# Direct dependencies only; not an exact historical lock.
+# Install a compatible PyTorch/CUDA build for the target machine.
+torch
+numpy
+pandas
+scipy
+h5py
+pytorch-lightning

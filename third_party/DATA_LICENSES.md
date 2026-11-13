@@ -1,0 +1,16 @@
+# Data sources and redistribution status
+
+**No raw or derived row-level data are included in this repository.** Aggregate evaluation records and checkpoint hashes are included; nineteen project-trained model binaries are included under separate noncommercial research use terms. A license on code never grants rights over training data or third-party model weights.
+
+| Data or asset | Observed role | Source and evidence | License or use condition established | Redistribution decision |
+|---|---|---|---|---|
+| AGBD-Lite v1 | Official H5 splits and AGBD target | [creators' Zenodo record](https://zenodo.org/records/18485030), [dataset card](https://huggingface.co/datasets/prs-eth/AGBD-Lite) | Dataset card states CC BY-NC 4.0; attribution and noncommercial limits apply | Do not bundle; obtain from creators |
+| GEDI Level 4A | Target measurements embodied in AGBD-Lite | [NASA GEDI mission](https://gedi.umd.edu/data/products/) and AGBD-Lite record | Exact upstream granule and redistribution path not established for any standalone GEDI asset; check its terms before adding one | Do not bundle |
+| Sentinel-2 | Optical inputs within AGBD-Lite | [Copernicus Sentinel-2 collection](https://dataspace.copernicus.eu/data-collections/copernicus-sentinel-missions/sentinel-2), [Copernicus data terms](https://dataspace.copernicus.eu/terms-and-conditions) | Open-access mission data; redistribution must follow applicable terms and attribution. Portal content has separate terms | Do not bundle |
+| ALOS/PALSAR | Radar inputs named in model | [JAXA dataset description](https://www.eorc.jaxa.jp/ALOS/en/dataset/pdf/DatasetDescription_PALSAR_Mosaic_FNF_revN.pdf), [JAXA Earth data policy](https://earth.jaxa.jp/en/data/policy/) | JAXA ownership and acknowledgment identified; exact source/version and input redistribution rights not established; check before adding source data | Do not bundle |
+| DEM | Elevation input/field | AGBD-Lite schema in [dataset card](https://huggingface.co/datasets/prs-eth/AGBD-Lite) | Native elevation product unidentified; no product-specific license assigned by inference. Check exact product terms before adding | Do not bundle |
+| Land Cover | Categorical input/field | AGBD-Lite schema in [dataset card](https://huggingface.co/datasets/prs-eth/AGBD-Lite) | Native land-cover product/license unidentified. Check exact product terms before adding | Do not bundle |
+| Project-trained checkpoints | Outputs from the above dataset | Hashes in `main_model/weights_index.csv` and `ablations/weights_index.csv` | [Project checkpoint terms](../MODEL_WEIGHTS_TERMS.md) grant noncommercial research use with attribution; dataset is not redistributed. Weight-specific source-data legal interpretation remains separately reviewable | Nineteen project-trained `.pt` files included |
+| Aggregate metrics and protocol logs | Project-generated summary evidence | `results/`, `main_model/results/` and `ablations/` | No row-level coordinates, tiles, labels or third-party figures are included; original project records use the root MIT license | Included |
+
+This table reports verified conditions only. It does not treat “free access” as permission to redistribute, and it does not infer a field's license from its name.
